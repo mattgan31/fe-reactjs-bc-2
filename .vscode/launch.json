@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+      {
+        "type": "firefox",
+        "request": "launch",
+        "reAttach": true,
+        "name": "Launch Firefox localhost",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceRoot}",
+        "firefoxExecutable": "C:/Program Files/Mozilla Firefox/firefox.exe",
+        "log": {
+          "consoleLevel": {
+            "PathConversion": "Debug",
+            "default": "Error"
+          }
+        }
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceRoot}"
+      }
+    ]
+  }
